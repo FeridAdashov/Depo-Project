@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".Pages.SignActivities.SignIn">
+
+    <texel.com.depoproject.CustomDialogs.CustomHorizontalProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:visibility="gone"
+        app:animationDuration="2000"
+        app:gradientEndColor="#00FFFF"
+        app:gradientStartColor="#FF0000" />
+
+    <Button
+        android:id="@+id/buttonAboutUs"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/progress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_info_white"
+        android:tint="@color/accent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progress">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/logo_depo" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/edit_text_back"
+                android:drawableStart="@drawable/ic_person_white"
+                android:drawableLeft="@drawable/ic_person_white"
+                android:drawablePadding="20dp"
+                android:hint="@string/hint_enter_email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_eye_white_24dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/edit_text_back"
+                    android:drawableStart="@drawable/ic_key_white"
+                    android:drawableLeft="@drawable/ic_key_white"
+                    android:drawablePadding="20dp"
+                    android:hint="@string/hint_enter_password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_text_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/buttonSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="@string/button_sign_in"
+                    android:textColor="@color/accent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/textView_create_new_account"
+                android:textColor="#fff"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

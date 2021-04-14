@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewBeginDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/begin_date"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textViewEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/end_date"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/edit_text_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/expenses"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_unchecked_box_white" />
+
+        <TextView
+            android:id="@+id/textViewSells"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/edit_text_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sells"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_unchecked_box_white" />
+
+        <TextView
+            android:id="@+id/textViewTextures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/edit_text_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/textures"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_unchecked_box_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewBuys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/edit_text_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/buys"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_unchecked_box_white" />
+
+        <TextView
+            android:id="@+id/textViewDebts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/edit_text_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/debts"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_unchecked_box_white" />
+
+        <TextView
+            android:id="@+id/textViewReturns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/edit_text_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/returns"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_unchecked_box_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewReturnToDepo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/edit_text_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/returns_to_depo"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_unchecked_box_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewDeleteInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/comfort_taxi_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_delete_white"
+            app:drawableStartCompat="@drawable/ic_delete_white" />
+
+        <TextView
+            android:id="@+id/textViewSaveInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/signupButtonColor"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_save_white"
+            app:drawableStartCompat="@drawable/ic_save_white" />
+    </LinearLayout>
+</LinearLayout>

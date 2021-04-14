@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_markets"
+        android:icon="@drawable/ic_market_white"
+        android:title="@string/markets" />
+
+    <item
+        android:id="@+id/navigation_return_to_depo"
+        android:icon="@drawable/ic_undo_white"
+        android:title="İadə"/>
+
+    <item
+        android:id="@+id/navigation_expenses"
+        android:icon="@drawable/ic_money_white"
+        android:title="@string/expenses" />
+
+    <item
+        android:id="@+id/navigation_texture"
+        android:icon="@drawable/ic_print_white"
+        android:title="@string/textures" />
+</menu>

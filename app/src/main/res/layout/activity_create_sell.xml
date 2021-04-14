@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".Pages.SELLER.Activities.CreateSell.CreateSellActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_search_white"
+            android:drawableLeft="@drawable/ic_search_white"
+            android:drawablePadding="10dp"
+            android:hint="@string/search"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/buttonBasket"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_basket_white" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/have_not_item_textview" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/editTextSearch"
+            android:layout_margin="8dp" />
+    </RelativeLayout>
+</LinearLayout>

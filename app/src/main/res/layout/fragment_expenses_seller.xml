@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700">
+
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupUsers"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/textViewBeginDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/begin_date"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textViewEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBeginDate"
+            android:text="@string/end_date"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupBuyReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioPercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Faiz"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digər"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/imageButtonRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_refresh_white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/category_layout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_search_white"
+            android:drawableLeft="@drawable/ic_search_white"
+            android:drawablePadding="10dp"
+            android:hint="@string/search"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAddOtherExpense"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_add_white" />
+    </LinearLayout>
+
+    <include layout="@layout/have_not_item_textview" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_layout"
+        android:layout_margin="8dp" />
+</RelativeLayout>

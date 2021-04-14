@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profits"
+            android:icon="@drawable/ic_profit_white"
+            android:title="@string/profits" />
+
+        <item
+            android:id="@+id/nav_expenses"
+            android:icon="@drawable/ic_expense_white"
+            android:title="@string/expenses" />
+
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_statistic"
+            android:title="@string/statistics" />
+
+        <item
+            android:id="@+id/nav_return_title"
+            android:title="@string/return_product">
+            <menu>
+                <item
+                    android:id="@+id/nav_return_buys"
+                    android:icon="@drawable/ic_undo_white"
+                    android:title="Zavoda" />
+                <item
+                    android:id="@+id/nav_return_sells"
+                    android:icon="@drawable/ic_undo_white"
+                    android:title="Marketdən" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_debts_title"
+            android:title="@string/debts">
+            <menu>
+                <item
+                    android:id="@+id/nav_debt_fabric"
+                    android:icon="@drawable/ic_debt_white"
+                    android:title="@string/fabrics" />
+                <item
+                    android:id="@+id/nav_debt_market"
+                    android:icon="@drawable/ic_debt_white"
+                    android:title="@string/markets" />
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_texture"
+        android:icon="@drawable/ic_texture_white"
+        android:title="@string/textures" />
+
+    <item
+        android:id="@+id/navigation_buys"
+        android:icon="@drawable/ic_buy_white"
+        android:title="@string/buys" />
+
+    <item
+        android:id="@+id/navigation_sells"
+        android:icon="@drawable/ic_sells_white"
+        android:title="@string/sells" />
+
+    <item
+        android:id="@+id/navigation_return_to_depo"
+        android:icon="@drawable/ic_undo_white"
+        android:title="İadə" />
+</menu>

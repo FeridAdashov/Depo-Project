@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".Pages.RegisterActivities.SellerRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCustomerProfileInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="@string/registration"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/edit_text_back"
+            android:digits=" abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSİTUVWXYZÜIĞÖŞÇƏ0123456789"
+            android:drawableStart="@drawable/ic_person_white"
+            android:drawableLeft="@drawable/ic_person_white"
+            android:drawablePadding="20dp"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edit_text_hint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="#ADCCE2" />
+
+        <EditText
+            android:id="@+id/editTextSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/edit_text_back"
+            android:digits=" abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSİTUVWXYZÜIĞÖŞÇƏ0123456789"
+            android:drawableStart="@drawable/ic_person_white"
+            android:drawableLeft="@drawable/ic_person_white"
+            android:drawablePadding="20dp"
+            android:hint="@string/surname"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edit_text_hint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="#ADCCE2" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/edit_text_back"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="20dp"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edit_text_hint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="#ADCCE2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textViewRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/register"
+                android:textColor="@color/accent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
